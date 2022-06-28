@@ -31,6 +31,13 @@
     <!-------Links Ends Here------->
 
     <!--------------Script Tags Starts here------------------->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="jquery.min.js"></script>                            
+    <script src="jssor.slider.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jssor-slider/27.1.0/jssor.slider.min.js"></script>
     <script
       src="https://kit.fontawesome.com/af7b2b9a01.js"
       crossorigin="anonymous"
@@ -159,47 +166,27 @@
         </div>
       </div>
     </section>
-      <!--------Image Slider Ends Here-------->
+    <!--------Image Slider Ends Here-------->
 
     <!--------------CHALET & ROOM SECTION Starts Here------------------->
 
     <!-----------------CHALET--------------->
-    
-      <div class="chal-text">
-        <h2>Chalet</h2>
-        <h2>Chalet</h2>
-      </div>
 
-        <!-- Slider 1 -->
-        <div class="slider" id="slider1">
-          <!-- Slides -->
-          <div
-            style="
-              background-image: url(images/07-unsplash.jpg);
-            "
-          ></div>
-          <div
-            style="
-              background-image: url(images/02-unsplash.jpg);
-            "
-          ></div>
-          <div
-            style="
-              background-image: url(images/08-unsplash.jpg);
-            "
-          ></div>
-          <div
-            style="
-              background-image: url(images/01-unsplash.jpg);
-            "
-          ></div>
-          <div
-            style="
-              background-image: url(images/04-unsplash.jpg);
-            "
-          ></div>
-        </div>
-  
+    <div class="chal-text">
+      <h2>Chalet</h2>
+      <h2>Chalet</h2>
+    </div>
+
+    <!-- Slider 1 -->
+    <div class="slider" id="slider1">
+      <!-- Slides -->
+      <div style="background-image: url(images/07-unsplash.jpg)"></div>
+      <div style="background-image: url(images/02-unsplash.jpg)"></div>
+      <div style="background-image: url(images/08-unsplash.jpg)"></div>
+      <div style="background-image: url(images/01-unsplash.jpg)"></div>
+      <div style="background-image: url(images/04-unsplash.jpg)"></div>
+    </div>
+
     <!---------------ROOMS--------------->
     <div class="room">
       <div class="room-text">
@@ -245,7 +232,172 @@
     </div>
     <!--------------CHALET & ROOM SECTION Ends Here------------------->
 
-    
+    <section class="wow fadeIn example no-padding no-transition slider-top">
+      <div style="min-height: 50px">
+        <!-- Jssor Slider Begin -->
+
+        <div
+          id="slider1_container"
+          style="
+            visibility: hidden;
+            position: relative;
+            margin: 70px auto;
+            top: 0px;
+            left: 0px;
+            width: 1300px;
+            height: 500px;
+            overflow: hidden;
+          "
+        >
+          <!-- Loading Screen -->
+          <div
+            data-u="loading"
+            class="jssorl-009-spin"
+            style="
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              background-color: rgba(0, 0, 0, 0.7);
+            "
+          >
+            <img
+              style="
+                margin-top: -19px;
+                position: relative;
+                top: 50%;
+                width: 38px;
+                height: 38px;
+              "
+              src="https://www.jssor.com/theme/svg/loading/static-svg/spin.svg"
+            />
+          </div>
+
+          <!-- Slides Container -->
+          <div
+            data-u="slides"
+            style="
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              width: 1300px;
+              height: 500px;
+              overflow: hidden;
+            "
+          >
+            <div>
+              <img
+                data-u="image"
+                src="https://images.pexels.com/photos/414191/pexels-photo-414191.jpeg"
+                class="slider"
+              />
+            </div>
+            <div>
+              <img
+                data-u="image"
+                src="https://images.pexels.com/photos/243415/pexels-photo-243415.jpeg"
+                class="slider"
+              />
+            </div>
+            <div>
+              <img
+                data-u="image"
+                src="https://images.pexels.com/photos/350749/pexels-photo-350749.jpeg"
+                class="slider"
+              />
+            </div>
+          </div>
+
+          <!--#region Bullet Navigator Skin Begin -->
+          <!-- Help: https://www.jssor.com/development/slider-with-bullet-navigator.html -->
+          <style></style>
+          <div
+            data-u="navigator"
+            class="jssorb031"
+            style="position: absolute; bottom: 12px; right: 12px"
+            data-autocenter="1"
+            data-scale="0.5"
+            data-scale-bottom="0.75"
+          >
+            <div data-u="prototype" class="i" style="width: 16px; height: 16px">
+              <svg
+                viewBox="0 0 16000 16000"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+              >
+                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+              </svg>
+            </div>
+          </div>
+          <!--#endregion Bullet Navigator Skin End -->
+
+          <!--#region Arrow Navigator Skin Begin -->
+          <!-- Help: https://www.jssor.com/development/slider-with-arrow-navigator.html -->
+          <style></style>
+          <div
+            data-u="arrowleft"
+            class="jssora051"
+            style="width: 55px; height: 55px; top: 0px; left: 25px"
+            data-autocenter="2"
+            data-scale="0.75"
+            data-scale-left="0.75"
+          >
+            <svg
+              viewBox="0 0 16000 16000"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <polyline
+                class="a"
+                points="11040,1920 4960,8000 11040,14080 "
+              ></polyline>
+            </svg>
+          </div>
+          <div
+            data-u="arrowright"
+            class="jssora051"
+            style="width: 55px; height: 55px; top: 0px; right: 25px"
+            data-autocenter="2"
+            data-scale="0.75"
+            data-scale-right="0.75"
+          >
+            <svg
+              viewBox="0 0 16000 16000"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <polyline
+                class="a"
+                points="4960,1920 11040,8000 4960,14080 "
+              ></polyline>
+            </svg>
+          </div>
+          <!--#endregion Arrow Navigator Skin End -->
+        </div>
+        <!-- Jssor Slider End -->
+      </div>
+    </section>
+
+    <!---------PHASE SLIDE VIEW STARTS HERE----------->
+
+    <!---------PHASE SLIDE VIEW ENDS HERE----------->
 
     <!--------FOOTER AECTION STARTS HERE---------
     <footer class="footer-section">
@@ -364,85 +516,83 @@
 
   <!---------------FOOTER AECTION ENDS HERE--------------->
 
-  <script type="text/javascript">
-    window.addEventListener("scroll", function () {
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 0);
-    });
-  
-    // JS Background Image Slider Starts Here
-  
-    var slides = document.querySelectorAll(".slide");
-    var btns = document.querySelectorAll(".btn");
-    let currentSlide = 1;
-  
-    // Javascript for image slider manual navigation
-    var manualNav = function (manual) {
-      slides.forEach((slide) => {
-        slide.classList.remove("active");
-  
-        btns.forEach((btn) => {
-          btn.classList.remove("active");
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      // JS Background Image Slider Starts Here
+
+      var slides = document.querySelectorAll(".slide");
+      var btns = document.querySelectorAll(".btn");
+      let currentSlide = 1;
+
+      // Javascript for image slider manual navigation
+      var manualNav = function (manual) {
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+
+          btns.forEach((btn) => {
+            btn.classList.remove("active");
+          });
+        });
+        slides[manual].classList.add("active");
+        btns[manual].classList.add("active");
+      };
+
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          manualNav(i);
+          currentSlide = i;
         });
       });
-      slides[manual].classList.add("active");
-      btns[manual].classList.add("active");
-    };
-  
-    btns.forEach((btn, i) => {
-      btn.addEventListener("click", () => {
-        manualNav(i);
-        currentSlide = i;
-      });
-    });
-  
-    // Javascript for image slider autoplay navigation
-    var repeat = function (activeClass) {
-      let active = document.getElementsByClassName("active");
-      let i = 1;
-  
-      var repeater = () => {
-        setTimeout(function () {
-          [...active].forEach((activeSlide) => {
-            activeSlide.classList.remove("active");
-          });
-  
-          slides[i].classList.add("active");
-          btns[i].classList.add("active");
-          i++;
-  
-          if (slides.length == i) {
-            i = 0;
-          }
-          if (i >= slides.length) {
-            return;
-          }
-          repeater();
-        }, 5550);
+
+      // Javascript for image slider autoplay navigation
+      var repeat = function (activeClass) {
+        let active = document.getElementsByClassName("active");
+        let i = 1;
+
+        var repeater = () => {
+          setTimeout(function () {
+            [...active].forEach((activeSlide) => {
+              activeSlide.classList.remove("active");
+            });
+
+            slides[i].classList.add("active");
+            btns[i].classList.add("active");
+            i++;
+
+            if (slides.length == i) {
+              i = 0;
+            }
+            if (i >= slides.length) {
+              return;
+            }
+            repeater();
+          }, 5550);
+        };
+        repeater();
       };
-      repeater();
-    };
-    repeat();
+      repeat();
 
+      // Content Chalet & Rooms JS code
 
-     // Content Chalet & Rooms JS code
+      // Room Section Starts Here
+      onload = start;
 
-   // Room Section Starts Here
-   onload = start;
+      function start() {
+        var i = 1;
+        function Move() {
+          i = (i % 5) + 1; // 4 is the Number of image in slider
+          document.getElementById("r" + i).checked = true;
+        }
+        setInterval(Move, 3000); //change img in 3 sec
+      }
 
-   function start() {
-     var i = 1;
-     function Move() {
-       i = (i % 5) + 1; // 5 is the Number of image in slider
-       document.getElementById("r" + i).checked = true;
-     }
-     setInterval(Move, 4000); //change img in 3 sec
-   }
-   start();
- 
-  // Room Section Ends Here
+      // Room Section Ends Here
 
-  
-  </script>
+      
+    </script>
   </body>
 </html>
